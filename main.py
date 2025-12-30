@@ -38,8 +38,3 @@ def search_for_artist(token, artist_name):
     result = get(query_url, headers=headers)
     json_result = json.loads(result.content)
     print(json_result)
-
-
-token = get_token()
-print(token)
-search_for_artist(token, "ACDC")
